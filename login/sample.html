@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <!-- Material Design for Bootstrap CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
+<!-- 
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+</head>
+<style>
+  body{
+      background-image: url('https://cdn.lynda.com/course/85324/85324-637020653951113183-16x9.jpg')
+  }
+
+
+</style>
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">InDesign Secrets</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav> 
+
+    <!--  -->
+    <div class="row register" style="margin-top: 5%;">
+        <br>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card " style="border: 2px solid">
+                <div class="card-header">
+                <center>
+                <H5> Register </H5>
+                </center>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="fname" class="bmd-label-floating">Full Name</label>
+                        <input type="text" class="form-control" id="fname">
+                    </div>
+                    <div class="form-group">
+                        <label for="username" class="bmd-label-floating">Username</label>
+                        <input type="text" class="form-control" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd" class="bmd-label-floating">Password</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <center>
+                        <button type="button" class="btn btn-outline-success reg-btn">Sign in</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="col-md-4"></div>
+    <!-- login -->
+    <div class="row loginPage" >
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="container">
+                <div class="card " style="border: 2px solid; border-radius: 30px 80px">
+                    <div class="card-header">
+                            <!-- <center>
+                                    <div class="avatar" >
+                                        <img src="data:image/jpeg;base64,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" alt="Avatar">
+                                    </div>  
+                                </center><br> -->
+                       <center> <H5> New User </H5> </center>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="username" class="bmd-label-floating">Username</label>
+                            <input type="text" class="form-control" id="uname">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd" class="bmd-label-floating">Password</label>
+                            <input type="password" class="form-control" id="passw">
+                        </div>
+                        <center>
+                            <button type="button" class="btn btn-outline-success login-btn">Login</button>
+                            <button type="button" class="btn btn-outline-danger cancel">cancel</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+    <!-- Hompage -->
+    </div>
+    <div class="home" class="row page">
+        <center>
+            <h4>SD2082 Activity 1</h4>
+        </center>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>
+</body>
+<script>
+    $(document).ready(function () {
+        $('body').bootstrapMaterialDesign();
+        showHide(null, ".loginPage", ".home")
+        var accounts = []
+
+        function showHide(show, hide, hide2) {
+            $(".register input").val(null)
+            $(show).show();
+            $(hide).hide();
+            $(hide2).hide();
+        }
+
+        $(".cancel").click(function () {
+            showHide(".register", ".loginPage", ".home")
+        })
+
+        $(".reg-btn").click(function () {
+            if ($(".register input").val() == "") {
+                alert("All input must be required!")
+
+            } else if (checkPassword($("#pwd").val())) {
+                var account = { name: $("#fname").val(), username: $("#username").val(), password: $("#pwd").val() }
+                accounts.push(account)
+                console.log(accounts)
+                showHide(".loginPage", ".register", ".home")
+            } else {
+                alert("password is too weak!")
+            }
+
+        })
+        // accounts[0].name
+        $(".login-btn").click(function () {
+            var login = false;
+            for (let i = 0; i < accounts.length; i++) {
+                if (accounts[i].username == $("#uname").val() && accounts[i].password == $("#passw").val()) {
+                    login = true;
+                }
+            }
+            if (login) {
+                showHide(".home", ".loginPage", ".register")
+            } else {
+                alert("login failed!")
+            }
+        })
+
+        function checkPassword(str) {
+            var re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+            return re.test(str);
+        }
+    });
+</script>
+</body>
+
+</html>
